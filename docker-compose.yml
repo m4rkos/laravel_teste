@@ -4,19 +4,19 @@
 version: "3.1"
 services:
 
-    mariadb:
-      image: mariadb:10.4
-      container_name: database
-      working_dir: /application
-      volumes:
-        - .:/application
-      environment:
-        - MYSQL_ROOT_PASSWORD=laravel
-        - MYSQL_DATABASE=laravel
-        - MYSQL_USER=laravel
-        - MYSQL_PASSWORD=laravel
-      ports:
-        - "1028:3306"
+    # mariadb:
+    #   image: mariadb:10.4
+    #   container_name: database
+    #   working_dir: /application
+    #   volumes:
+    #     - .:/application
+    #   environment:
+    #     - MYSQL_ROOT_PASSWORD=laravel
+    #     - MYSQL_DATABASE=laravel
+    #     - MYSQL_USER=laravel
+    #     - MYSQL_PASSWORD=laravel
+    #   ports:
+    #     - "1028:3306"
 
     webserver:
       image: nginx:alpine

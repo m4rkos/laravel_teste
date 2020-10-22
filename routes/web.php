@@ -14,4 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/contact', 'HomeController@contact')->name('contact');
+
+Route::get('/user', 'UserController@users')->name('users');
+Route::post('/user', 'ListsUserController@store')->name('create_users');
+Route::get('/users', function(){
+    return view('users');
+});
+Route::get('/lista', 'ListsUserController@index')->name('list_users_by_db');

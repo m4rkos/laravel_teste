@@ -38,6 +38,6 @@ class ImportDatabase extends Command
      */
     public function handle()
     {
-        return DB::unprepared(file_get_contents(base_path() . '/sql/dealersites-test.sql'));
+        return DB::unprepared(file_get_contents(base_path() . '/sql/dealersites-marcos_eduardo-test.sql'));
     }
 }
